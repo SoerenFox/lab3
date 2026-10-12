@@ -1,0 +1,26 @@
+device:
+  name: ECU
+  version: 1.0.0
+  manufacturer: LF
+  is_active: false
+  microcontroller:
+  - type: STM32F103
+  - clock_frequency_mhz: 72
+  - ram_kb: 20
+  - is_watchdog_enabled: false
+  sensors:
+    - name: tempSensor
+      type: temperature
+      unit: Celsius
+      is_calibrated: false
+    - name: voltSensor
+      type: voltage
+      unit: Volt
+      is_calibrated: false
+  leds:
+    - color: red
+      function: programming
+      is_enabled: false
+    - color: yellow
+      function: power
+      is_enabled: false 
